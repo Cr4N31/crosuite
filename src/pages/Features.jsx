@@ -27,7 +27,7 @@ function Features() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
+      <section className="py-20 px-6 max-w-6xl mx-auto" data-aos="fade-up">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((f) => (
             <div
