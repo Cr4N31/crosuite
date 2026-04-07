@@ -18,7 +18,7 @@ function Home() {
       >
         <div className="absolute inset-0 bg-[#07070f]/85" />
         <div className="relative ml-8 z-10 max-w-2xl" data-aos="fade-up">
-          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/80 border border-white/80 px-4 py-1.5 rounded-sm mb-8">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/70 border border-white/20 px-4 py-1.5 rounded-sm mb-8">
             Web3 × Discord
           </span>
           <h1 className="font-syne font-extrabold text-5xl md:text-6xl leading-[1.08] mb-6 text-white">

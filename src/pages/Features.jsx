@@ -17,7 +17,7 @@ function Features() {
       >
         <div className="absolute inset-0 bg-[#07070f]/85" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/60 border border-white/80 px-4 py-1.5 rounded-sm mb-8">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/70 border border-white/20 px-4 py-1.5 rounded-sm mb-8">
             Full Feature Set
           </span>
           <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 text-white">
