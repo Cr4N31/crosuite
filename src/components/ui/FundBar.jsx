@@ -1,6 +1,6 @@
 function FundBar({ label, percentage, desc, color }) {
   return (
-    <div className="mb-6">
+    <div className="mb-6" data-aos="fade-up">
       <div className="flex items-center justify-between mb-2">
         <span className="text-sm font-medium text-white">{label}</span>
         <span className="text-sm font-mono font-bold" style={{ color }}>{percentage}%</span>
