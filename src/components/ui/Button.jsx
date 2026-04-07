@@ -1,9 +1,9 @@
 function Button({ variant = "primary", children, className = "", ...props }) {
-  const base = "font-medium rounded-lg px-5 py-2.5 text-sm transition-all duration-200 cursor-pointer border"
+  const base = "font-medium rounded-sm px-5 py-2.5 text-sm transition-all duration-200 cursor-pointer border tracking-wide"
 
   const variants = {
-    primary: "bg-blue-700 text-white border-transparent hover:bg-blue-800",
-    outline: "bg-transparent text-blue-600 border-blue-800/40 hover:bg-blue-900/20",
+    primary: "bg-blue-700/80 text-white border-blue-800/50 hover:bg-blue-700",
+    outline: "bg-transparent text-white/40 border-white/10 hover:text-white/70 hover:border-white/20",
   }
 
   return (

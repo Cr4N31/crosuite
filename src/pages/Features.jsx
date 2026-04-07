@@ -1,53 +1,52 @@
 import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import { features } from "../data/features"
-import bg from "../../public/assets/Crosuit bg 2.jpeg"
 import { icons } from "../components/ui/Icons"
+import bg from "../../public/assets/Crosuit bg 2.jpeg"
 
 function Features() {
   return (
-    <main className="bg-black/40 text-white min-h-screen">
-
+    <main className="bg-[#07070f] text-white min-h-screen">
       <Navbar />
 
-      {/* Page Hero */}
-      <section className="relative pt-36 pb-16 px-6 text-center" style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }} data-aos="fade-up">
-        <div className="absolute inset-0 bg-[#0a0a0f]/75" />
+      <section
+        className="relative pt-36 pb-16 px-6 text-center"
+        style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+        data-aos="fade-up"
+      >
+        <div className="absolute inset-0 bg-[#07070f]/85" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.65rem] tracking-[4px] uppercase text-blue-600 border border-blue-900 px-4 py-1.5 rounded-full mb-8">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/25 border border-white/10 px-4 py-1.5 rounded-sm mb-8">
             Full Feature Set
           </span>
-          <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 ">
+          <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 text-white">
             Everything Crosuite Can Do
           </h1>
-          <p className="text-[#9990b0] text-lg leading-relaxed">
+          <p className="text-white/30 text-sm leading-loose">
             A complete Web3 toolkit built for Discord communities — from swaps and airdrops to games and NFT integration.
           </p>
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-20 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((f) => (
             <div
               key={f.title}
-              className="bg-[#111118] border border-white/5 rounded-2xl p-8 hover:border-violet-600/40 hover:shadow-[0_0_24px_#7c3aed15] transition-all duration-300"
+              className="bg-[#0d0d1a] border border-white/[0.05] rounded-xl p-8 hover:border-blue-900/40 transition-all duration-300"
               data-aos="fade-up"
             >
               <div className="flex items-center gap-4 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-blue-950/50 flex items-center justify-center text-blue-400 mb-4">
-                {icons[f.icon]}
+                <div className="w-10 h-10 rounded-lg bg-blue-950/60 flex items-center justify-center text-blue-400">
+                  {icons[f.icon]}
                 </div>
-                <h3 className="font-syne font-bold text-blue-200 text-xl">{f.title}</h3>
+                <h3 className="font-syne font-bold text-white text-lg">{f.title}</h3>
               </div>
-
-              <p className="text-white/70 text-sm leading-relaxed mb-6">{f.desc}</p>
-
+              <p className="text-white/30 text-sm leading-loose mb-6">{f.desc}</p>
               <ul className="flex flex-col gap-2">
                 {f.points.map((point) => (
-                  <li key={point} className="flex items-center gap-2 text-sm text-[#6b6880]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                  <li key={point} className="flex items-center gap-2.5 text-xs text-white/20">
+                    <span className="w-1 h-1 rounded-full bg-violet-500/60 shrink-0" />
                     {point}
                   </li>
                 ))}
@@ -57,34 +56,26 @@ function Features() {
         </div>
       </section>
 
-      {/* Future Development */}
-      <section className="py-20 px-6 max-w-4xl mx-auto text-center border-t border-white/5"
-                data-aos="fade-up"
-      >
-        <p className="text-[0.7rem] tracking-[3px] uppercase text-blue-900 mb-3">Roadmap</p>
-        <h2 className="font-syne font-bold text-3xl text-blue-700 mb-5">The Future of Crosuite</h2>
-        <p className="text-black/60 leading-relaxed max-w-xl mx-auto mb-12">
-          Crosuite is continuously evolving with new features and improvements focused on performance, usability, and scalability.
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center border-t border-white/[0.04]" data-aos="fade-up">
+        <p className="text-[0.6rem] tracking-[5px] uppercase text-white/20 mb-3">Roadmap</p>
+        <h2 className="font-syne font-bold text-3xl text-white mb-4">The Future of Crosuite</h2>
+        <p className="text-white/25 text-sm leading-loose max-w-md mx-auto mb-12">
+          Continuously evolving — focused on performance, usability, and scalability.
         </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {[
-            {  label: "Multi-chain Expansion" },
-            {  label: "Improved Transaction Speed" },
-            {  label: "Advanced Community Tools" },
-            {  label: "Enhanced Security Systems" },
-            {  label: "Better User Experience" },
-          ].map((item) => (
-            <div key={item.label} className="bg-[#111118] border border-white/5 rounded-xl px-5 py-4 flex items-center gap-3">
-              <span className="text-xl">{item.icon}</span>
-              <span className="text-sm text-[#9990b0] font-medium">{item.label}</span>
+            "Multi-chain Expansion",
+            "Improved Transaction Speed",
+            "Advanced Community Tools",
+            "Enhanced Security Systems",
+            "Better User Experience",
+          ].map((label) => (
+            <div key={label} className="bg-[#0d0d1a] border border-white/[0.05] rounded-lg px-5 py-3.5">
+              <span className="text-sm text-white/30 font-medium">{label}</span>
             </div>
           ))}
         </div>
-
-        <p className="text-[#6b6880] text-xs mt-8">
-          Full details and updates will be shared progressively as development continues.
-        </p>
+        <p className="text-white/15 text-xs mt-8">Updates shared progressively as development continues.</p>
       </section>
 
       <Footer />

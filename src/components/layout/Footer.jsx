@@ -1,13 +1,21 @@
+import { Link } from "react-router-dom"
+
 function Footer() {
   return (
-    <footer className="border-t border-white/5 py-8 px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-black">
-      <div className="font-syne font-extrabold text-sm tracking-widest text-white">
-        CRO<span className="text-blue-500">SUITE</span>
+    <footer className="border-t border-white/[0.04] py-8 px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-[#07070f]">
+      <div className="font-syne font-extrabold text-sm tracking-widest text-white/50">
+        CRO<span className="text-blue-600/70">SUITE</span>
       </div>
-      <p className="text-[#6b6880] text-xs">© {new Date().getFullYear()} Crosuite. All rights reserved.</p>
+      <p className="text-white/15 text-xs">© {new Date().getFullYear()} Crosuite. All rights reserved.</p>
       <div className="flex gap-6">
-        {["Features", "Control Panel", "Transparency"].map((item) => (
-          <a key={item} href="#" className="text-[#6b6880] text-xs hover:text-white transition-colors">{item}</a>
+        {[
+          { label: "Features", path: "/features" },
+          { label: "Control Panel", path: "/control-panel" },
+          { label: "Transparency", path: "/transparency" },
+        ].map((item) => (
+          <Link key={item.label} to={item.path} className="text-white/20 text-xs hover:text-white/40 transition-colors">
+            {item.label}
+          </Link>
         ))}
       </div>
     </footer>
