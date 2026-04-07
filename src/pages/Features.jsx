@@ -6,7 +6,7 @@ import { icons } from "../components/ui/Icons"
 
 function Features() {
   return (
-    <main className="bg-black/20 text-white min-h-screen">
+    <main className="bg-black/40 text-white min-h-screen">
       <Navbar />
 
       {/* Page Hero */}

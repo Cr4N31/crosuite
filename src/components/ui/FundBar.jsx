@@ -11,7 +11,7 @@ function FundBar({ label, percentage, desc, color }) {
           style={{ width: `${percentage}%`, background: color }}
         />
       </div>
-      <p className="text-xs text-[#6b6880] leading-relaxed">{desc}</p>
+      <p className="text-xs text-black/80 leading-relaxed">{desc}</p>
     </div>
   )
 }

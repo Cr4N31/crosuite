@@ -1,16 +1,79 @@
-# React + Vite
+# Crosuite — Web3 Discord Bot Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimalist marketing site for **Crosuite**, a Discord bot that brings Web3 tools directly into communities. Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+Crosuite is a Discord bot that allows communities to manage tokens, NFTs, rewards, and engagement systems without leaving Discord. This repository contains the landing page — a four-page marketing site covering features, commands, and project transparency.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Pages:**
+- **Home** — hero, feature overview, about section, CTA
+- **Features** — full feature breakdown and roadmap
+- **Control Panel** — all bot commands with step-by-step usage
+- **Transparency** — fund allocation and project commitments
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React** — UI library
+- **Vite** — build tool and dev server
+- **Tailwind CSS** — utility-first styling
+- **React Router DOM** — client-side routing
+- **AOS** — scroll animations
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Installation
+```bash
+# clone the repo
+git clone https://github.com/your-username/crosuite.git
+
+# navigate into the project
+cd crosuite
+
+# install dependencies
+npm install
+
+# start the dev server
+npm run dev
+```
+
+App runs at `http://localhost:5173`
+
+### Build for Production
+```bash
+npm run build
+```
+
+---
+
+## Content Updates
+
+All site content lives in `src/data/` — no need to touch components to update copy.
+
+| File | What it controls |
+|---|---|
+| `features.js` | Feature titles, descriptions, bullet points |
+| `commands.js` | Command categories, individual commands, steps |
+| `fundAllocation.js` | Fund percentages, directions, commitments |
+
+---
+
+## Background Images
+
+Place images in `public/assets/`. Avoid spaces in filenames — use hyphens (e.g. `hero-bg.jpeg`). Reference them as `/assets/your-image.jpeg`.
+
+---
+
+## Contact
+
+Built by Yacham Duniya(CRAN3) — cran3.js.dev@gmail.com

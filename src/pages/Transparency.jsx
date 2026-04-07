@@ -2,34 +2,33 @@ import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import FundBar from "../components/ui/FundBar"
 import { fundAllocation, commitments, directions } from "../data/fundAllocation"
-
+import bg from "../../public/assets/Crosuit bg 4.jpeg"
 function Transparency() {
   return (
-    <main className="bg-[#0a0a0f] text-white min-h-screen">
+    <main className="bg-black/40 text-white min-h-screen">
       <Navbar />
 
       {/* Page Hero */}
-      <section className="relative pt-36 pb-16 px-6 text-center bg-[url('/assets/hero-bg.jpg')] bg-cover bg-center">
+      <section className="relative pt-36 pb-16 px-6 text-center" style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }} data-aos="fade-up">
         <div className="absolute inset-0 bg-[#0a0a0f]/75" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_center,_#7c3aed22_0%,_transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.7rem] tracking-[3px] uppercase text-violet-400 border border-violet-600/40 px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-block text-[0.7rem] tracking-[3px] uppercase text-blue-400 border border-blue-600/40 px-4 py-1.5 rounded-full mb-6">
             Transparency
           </span>
-          <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 bg-gradient-to-br from-white via-violet-300 to-cyan-400 bg-clip-text text-transparent">
+          <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5">
             Transparency & Fund Usage
           </h1>
-          <p className="text-[#9990b0] text-lg leading-relaxed">
+          <p className="text-white/60 text-lg leading-relaxed">
             We understand the importance of trust. Here's exactly how Crosuite operates and where funds go.
           </p>
         </div>
       </section>
 
       {/* Fund Allocation */}
-      <section className="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start" data-aos="fade-up">
         <div>
-          <p className="text-[0.7rem] tracking-[3px] uppercase text-violet-400 mb-2">Fund Allocation</p>
-          <h2 className="font-syne font-bold text-3xl text-white mb-10">Where the money goes</h2>
+          <p className="text-[0.7rem] tracking-[3px] uppercase text-blue-800 mb-2">Fund Allocation</p>
+          <h2 className="font-syne font-bold text-3xl text-blue-600 mb-10">Where the money goes</h2>
           {fundAllocation.map((item) => (
             <FundBar
               key={item.label}

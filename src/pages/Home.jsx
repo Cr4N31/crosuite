@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 function Home() {
   return (
-    <main className="bg-black/20 text-white">
+    <main className="bg-black/40 text-white">
       <Navbar />
 
       {/* Hero */}
