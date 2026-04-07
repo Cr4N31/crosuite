@@ -4,29 +4,30 @@ import FeatureCard from "../components/ui/FeatureCard"
 import Button from "../components/ui/Button"
 import { Link } from "react-router-dom"
 import bg from "../../public/assets/Crosuit bg 1.jpeg"
+import mainBg from "../../public/assets/nasa-Q1p7bh3SHj8-unsplash.jpg"
 
 function Home() {
   return (
-    <main className="bg-[#07070f] text-white">
+    <main className="bg-black text-white">
       <Navbar />
 
       {/* Hero */}
       <section
-        className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-16"
+        className="relative min-h-screen flex flex-col items-left justify-center px-6 pt-24 pb-16"
         style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         <div className="absolute inset-0 bg-[#07070f]/85" />
-        <div className="relative z-10 max-w-2xl" data-aos="fade-up">
-          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/30 border border-white/10 px-4 py-1.5 rounded-sm mb-8">
+        <div className="relative ml-8 z-10 max-w-2xl" data-aos="fade-up">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/80 border border-white/80 px-4 py-1.5 rounded-sm mb-8">
             Web3 × Discord
           </span>
           <h1 className="font-syne font-extrabold text-5xl md:text-6xl leading-[1.08] mb-6 text-white">
             The All-in-One<br />Web3 Toolkit<br />for Discord
           </h1>
-          <p className="text-white/30 text-sm max-w-sm mx-auto mb-10 leading-loose tracking-wide">
+          <p className="text-white/60 text-sm mb-10 leading-loose tracking-wide">
             Power your community with seamless token swaps, NFT tools, airdrops, and rewards — all without leaving Discord.
           </p>
-          <div className="flex gap-3 justify-center flex-wrap">
+          <div className="flex gap-3 flex-wrap">
             <Button variant="primary">Add to Discord</Button>
             <Button variant="outline">View Features</Button>
           </div>
@@ -37,11 +38,13 @@ function Home() {
       <FeatureCard />
 
       {/* What is Crosuite */}
-      <section className="py-24 px-6 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center" data-aos="fade-up">
+      <section className="py-24 px-6 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center" data-aos="fade-up"
+            style={{ backgroundImage: `url('${mainBg}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <div>
-          <p className="text-[0.6rem] tracking-[5px] uppercase text-white/20 mb-3">About</p>
+          <p className="text-[0.6rem] tracking-[5px] uppercase text-white/80 mb-3">About</p>
           <h2 className="font-syne font-bold text-3xl text-white mb-5 leading-snug">What is Crosuite?</h2>
-          <p className="text-white/30 text-sm leading-loose mb-8">
+          <p className="text-white/60 text-sm leading-loose mb-8">
             Crosuite is a Discord bot that brings Web3 tools directly into your community.
             It allows users to manage tokens, NFTs, rewards, and engagement systems without leaving Discord
             — making blockchain interactions simple, fast, and accessible.
@@ -80,7 +83,7 @@ function Home() {
       {/* CTA */}
       <section className="py-24 px-6 text-center border-t border-white/[0.04]">
         <div className="max-w-lg mx-auto" data-aos="fade-up">
-          <h2 className="font-syne font-extrabold text-4xl text-white mb-4 leading-tight">
+          <h2 className="font-syne font-bold text-4xl text-white mb-4 leading-tight">
             Ready to power your community?
           </h2>
           <p className="text-white/25 text-sm mb-8 leading-loose">

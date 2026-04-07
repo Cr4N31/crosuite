@@ -3,6 +3,7 @@ import Footer from "../components/layout/Footer"
 import { features } from "../data/features"
 import { icons } from "../components/ui/Icons"
 import bg from "../../public/assets/Crosuit bg 2.jpeg"
+import mainBg from "../../public/assets/mainBg.jpg"
 
 function Features() {
   return (
@@ -16,13 +17,13 @@ function Features() {
       >
         <div className="absolute inset-0 bg-[#07070f]/85" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/25 border border-white/10 px-4 py-1.5 rounded-sm mb-8">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/60 border border-white/80 px-4 py-1.5 rounded-sm mb-8">
             Full Feature Set
           </span>
           <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 text-white">
             Everything Crosuite Can Do
           </h1>
-          <p className="text-white/30 text-sm leading-loose">
+          <p className="text-white/60 text-sm leading-loose">
             A complete Web3 toolkit built for Discord communities — from swaps and airdrops to games and NFT integration.
           </p>
         </div>
@@ -56,10 +57,12 @@ function Features() {
         </div>
       </section>
 
-      <section className="py-20 px-6 max-w-4xl mx-auto text-center border-t border-white/[0.04]" data-aos="fade-up">
-        <p className="text-[0.6rem] tracking-[5px] uppercase text-white/20 mb-3">Roadmap</p>
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center border-t border-white/[0.04]" data-aos="fade-up"
+       style={{ backgroundImage: `url('${mainBg}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+      >
+        <p className="text-[0.6rem] tracking-[5px] uppercase text-white/60 mb-3">Roadmap</p>
         <h2 className="font-syne font-bold text-3xl text-white mb-4">The Future of Crosuite</h2>
-        <p className="text-white/25 text-sm leading-loose max-w-md mx-auto mb-12">
+        <p className="text-white/50 text-sm leading-loose max-w-md mx-auto mb-12">
           Continuously evolving — focused on performance, usability, and scalability.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -75,7 +78,7 @@ function Features() {
             </div>
           ))}
         </div>
-        <p className="text-white/15 text-xs mt-8">Updates shared progressively as development continues.</p>
+        <p className="text-white/30 text-xs mt-8">Updates shared progressively as development continues.</p>
       </section>
 
       <Footer />

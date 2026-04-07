@@ -5,7 +5,7 @@ function FeatureCard() {
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-[0.65rem] tracking-[4px] uppercase text-blue-800 mb-2">What We Offer</p>
-      <h2 className="font-syne font-bold text-3xl text-blue-900 mb-12">Everything your community needs</h2>
+      <h2 className="font-syne font-bold text-3xl text-blue-200 mb-12">Everything your community needs</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {features.map((f) => (

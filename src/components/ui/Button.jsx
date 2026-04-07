@@ -3,7 +3,7 @@ function Button({ variant = "primary", children, className = "", ...props }) {
 
   const variants = {
     primary: "bg-blue-700/80 text-white border-blue-800/50 hover:bg-blue-700",
-    outline: "bg-transparent text-white/40 border-white/10 hover:text-white/70 hover:border-white/20",
+    outline: "bg-transparent text-white/60 border-white/80 hover:text-white/70 hover:border-white/20",
   }
 
   return (
