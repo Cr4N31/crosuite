@@ -7,14 +7,14 @@ import { icons } from "../components/ui/Icons"
 function Features() {
   return (
     <main className="bg-black/40 text-white min-h-screen">
+
       <Navbar />
 
       {/* Page Hero */}
       <section className="relative pt-36 pb-16 px-6 text-center" style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }} data-aos="fade-up">
         <div className="absolute inset-0 bg-[#0a0a0f]/75" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_center,_#7c3aed22_0%,_transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.65rem] tracking-[4px] uppercase text-blue-400/80 border border-blue-900/60 px-4 py-1.5 rounded-full mb-8">
+          <span className="inline-block text-[0.65rem] tracking-[4px] uppercase text-blue-600 border border-blue-900 px-4 py-1.5 rounded-full mb-8">
             Full Feature Set
           </span>
           <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 ">

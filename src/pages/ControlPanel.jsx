@@ -8,14 +8,14 @@ import bg from "../../public/assets/Crosuit bg 3.jpeg"
 function ControlPanel() {
   return (
     <main className="bg-black/40 text-white min-h-screen">
+        
       <Navbar />
 
       {/* Page Hero */}
       <section className="relative pt-36 pb-16 px-6 text-center" style={{ backgroundImage: `url('${bg}')`, backgroundSize: "cover", backgroundPosition: "center" }} data-aos="fade-up">
         <div className="absolute inset-0 bg-[#0a0a0f]/75" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_center,_#7c3aed22_0%,_transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.7rem] tracking-[3px] uppercase text-blue-400 border border-blue-600/40 px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-block text-[0.7rem] tracking-[3px] uppercase text-blue-400 border border-blue-600 px-4 py-1.5 rounded-full mb-6">
             Commands
           </span>
           <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5">
