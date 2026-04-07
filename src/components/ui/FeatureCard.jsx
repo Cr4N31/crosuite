@@ -12,7 +12,6 @@ function FeatureCard() {
           <div
             key={f.title}
             className="bg-black/50 border border-white/[0.06] rounded-2xl p-6 hover:border-blue-900/50 transition-all duration-300"
-            data-aos="fade-right"
           >
             <div className="w-10 h-10 rounded-xl bg-blue-950/80 flex items-center justify-center text-blue-400 mb-4">
               {icons[f.icon]}

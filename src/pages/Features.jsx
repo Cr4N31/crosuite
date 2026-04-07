@@ -33,7 +33,7 @@ function Features() {
             <div
               key={f.title}
               className="bg-[#111118] border border-white/5 rounded-2xl p-8 hover:border-violet-600/40 hover:shadow-[0_0_24px_#7c3aed15] transition-all duration-300"
-              data-aos="fade-right"
+              data-aos="fade-up"
             >
               <div className="flex items-center gap-4 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-blue-950/50 flex items-center justify-center text-blue-400 mb-4">
