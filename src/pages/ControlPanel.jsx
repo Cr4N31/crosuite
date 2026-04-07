@@ -17,13 +17,13 @@ function ControlPanel() {
       >
         <div className="absolute inset-0 bg-[#07070f]/85" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/25 border border-white/10 px-4 py-1.5 rounded-sm mb-8">
+          <span className="inline-block text-[0.6rem] tracking-[5px] uppercase text-white/55 border border-white/70 px-4 py-1.5 rounded-sm mb-8">
             Commands
           </span>
           <h1 className="font-syne font-extrabold text-5xl leading-tight mb-5 text-white">
             Crosuite Control Panel
           </h1>
-          <p className="text-white/30 text-sm leading-loose">
+          <p className="text-white/50 text-sm leading-loose">
             Every command, how it works, and how to use it — all in one place.
           </p>
         </div>
@@ -58,7 +58,7 @@ function ControlPanel() {
             "New features and commands are added regularly — check back for updates.",
             "Always verify transactions before confirming.",
           ].map((note) => (
-            <li key={note} className="flex items-start gap-3 text-sm text-white/25">
+            <li key={note} className="flex items-start gap-3 text-sm text-white/45">
               <span className="w-1 h-1 rounded-full bg-blue-500/40 mt-2 shrink-0" />
               {note}
             </li>
