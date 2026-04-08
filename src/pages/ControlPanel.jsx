@@ -5,9 +5,12 @@ import { commands } from "../data/commands"
 import { icons } from "../components/ui/Icons"
 import bg from "/assets/Crosuit bg 3.jpeg"
 
+import Particle from "../components/ui/Particle"
+
 function ControlPanel() {
   return (
-    <main className="bg-[#07070f] text-white min-h-screen">
+    <main className="bg-[#07070f] text-white min-h-screen relative">
+      <Particle />
       <Navbar />
 
       <section

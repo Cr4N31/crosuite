@@ -4,9 +4,12 @@ import FundBar from "../components/ui/FundBar"
 import { fundAllocation, commitments, directions } from "../data/fundAllocation"
 import bg from "/assets/Crosuit bg 4.jpeg"
 
+import Particle from "../components/ui/Particle"
+
 function Transparency() {
   return (
-    <main className="bg-[#07070f] text-white min-h-screen">
+    <main className="bg-[#07070f] text-white min-h-screen relative">
+      <Particle />
       <Navbar />
 
       <section

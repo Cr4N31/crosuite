@@ -5,10 +5,12 @@ import Button from "../components/ui/Button"
 import { Link } from "react-router-dom"
 import bg from "/assets/Crosuit bg 1.jpeg"
 import mainBg from "/assets/nasa-Q1p7bh3SHj8-unsplash.jpg"
+import Particle from "../components/ui/Particle"
 
 function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-black text-white relative">
+      <Particle />
       <Navbar />
 
       {/* Hero */}

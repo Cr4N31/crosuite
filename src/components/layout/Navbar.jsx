@@ -30,8 +30,8 @@ function Navbar() {
       }`}>
         <div className="flex gap-2 items-center">
             <img src={img} className="w-8 h-8 rounded-xl" alt="cro-logo"/>
-            <Link to="/" className="font-syne font-extrabold text-xl tracking-widest text-white" onClick={handleLinkClick}>
-            CRO<span className="text-blue-500">SUITE</span>
+            <Link to="/" className="font-extrabold text-xl tracking-widest text-white" onClick={handleLinkClick}>
+            <span className="nav-text">CRO</span><span className="nav-text text-blue-500">SUITE</span>
             </Link>
         </div>
 
@@ -39,7 +39,7 @@ function Navbar() {
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none">
           {navLinks.map((item) => (
-            <li key={item.label}>
+            <li className="nav-list" key={item.label}>
               <Link
                 to={item.path}
                 className={`text-sm transition-all duration-200 relative pb-1 ${
@@ -83,7 +83,7 @@ function Navbar() {
             key={item.label}
             to={item.path}
             onClick={handleLinkClick}
-            className={`font-syne font-bold text-2xl transition-colors ${
+            className={`nav-list font-syne font-bold text-2xl transition-colors ${
               pathname === item.path ? "text-blue-400" : "text-white hover:text-blue-400"
             }`}
           >

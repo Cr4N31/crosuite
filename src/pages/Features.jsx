@@ -5,9 +5,12 @@ import { icons } from "../components/ui/Icons"
 import bg from "/assets/Crosuit bg 2.jpeg"
 import mainBg from "/assets/mainBg.jpg"
 
+import Particle from "../components/ui/Particle"
+
 function Features() {
   return (
-    <main className="bg-[#07070f] text-white min-h-screen">
+    <main className="bg-[#07070f] text-white min-h-screen relative">
+      <Particle />
       <Navbar />
 
       <section
