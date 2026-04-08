@@ -99,7 +99,7 @@ function Home() {
             <div className="w-7 h-7 rounded-full bg-blue-950 flex items-center justify-center text-blue-400 text-xs font-bold shrink-0">U</div>
             <div className="flex-1">
             <p className="text-blue-400/60 text-xs font-sans mb-1">User</p>
-            <p className="text-white/30 text-xs mb-3">/balance</p>
+            <p className="text-white/30 text-xs mb-3">/Mybalance</p>
 
             <div className="border border-white/[0.06] rounded-lg p-4 bg-[#0a0a16]">
                 <p className="text-white/70 text-xs font-sans font-semibold mb-4">Your Balances</p>
