@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Button from "../ui/Button"
 
 function Footer() {
   return (
@@ -17,6 +18,11 @@ function Footer() {
             {item.label}
           </Link>
         ))}
+      </div>
+      <div>
+        <Button variant="primary" >
+          <a href="https://twitter.com/crosuite" target="_blank" rel="noopener noreferrer">Follow on X</a>
+        </Button>
       </div>
     </footer>
   )
