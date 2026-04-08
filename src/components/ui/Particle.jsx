@@ -18,11 +18,11 @@ function Particle() {
     const particles = Array.from({ length: 100 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      size: Math.random() * 1.5 + 0.5,
+      size: Math.random() * 1.5 + 0.9,
       dx: (Math.random() - 0.5) * 0.1,
       dy: (Math.random() - 0.5) * 0.1,
       opacity: Math.random() * 0.3 + 0.7,
-      color: Math.random() > 0.5 ? "99, 102, 241" : "59, 130, 246",
+      color: Math.random() > 0.5 ? "135, 206, 235" : "59, 130, 246",
     }))
 
     const draw = () => {

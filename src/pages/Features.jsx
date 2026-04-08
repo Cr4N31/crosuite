@@ -37,20 +37,20 @@ function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="bg-[#0d0d1a] border border-white/[0.05] rounded-xl p-8 hover:border-blue-900/40 transition-all duration-300"
+              className="bg-blue-900/90 border border-white/[0.05] rounded-xl p-8 hover:border-blue-900/40 transition-all duration-300"
               data-aos="fade-up"
             >
               <div className="flex items-center gap-4 mb-5">
-                <div className="w-10 h-10 rounded-lg bg-blue-950/60 flex items-center justify-center text-blue-400">
+                <div className="w-10 h-10 rounded-lg bg-blue-950/60 flex items-center justify-center text-white">
                   {icons[f.icon]}
                 </div>
                 <h3 className="font-bold text-blue-200 text-lg">{f.title}</h3>
               </div>
-              <p className="text-white/30 text-sm leading-loose mb-6">{f.desc}</p>
+              <p className="text-white/70 text-sm leading-loose mb-6">{f.desc}</p>
               <ul className="flex flex-col gap-2">
                 {f.points.map((point) => (
-                  <li key={point} className="flex items-center gap-2.5 text-xs text-white/20">
-                    <span className="w-1 h-1 rounded-full bg-violet-500/60 shrink-0" />
+                  <li key={point} className="flex items-center gap-2.5 text-xs text-white/50">
+                    <span className="w-1 h-1 rounded-full bg-violet-100/60 shrink-0" />
                     {point}
                   </li>
                 ))}
@@ -76,8 +76,8 @@ function Features() {
             "Enhanced Security Systems",
             "Better User Experience",
           ].map((label) => (
-            <div key={label} className="bg-[#0d0d1a] border border-white/[0.05] rounded-lg px-5 py-3.5">
-              <span className="text-sm text-white/30 font-medium">{label}</span>
+            <div key={label} className="bg-blue-900/90 border border-white/[0.05] rounded-lg px-5 py-3.5">
+              <span className="text-sm text-white/70 font-medium">{label}</span>
             </div>
           ))}
         </div>

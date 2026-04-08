@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <nav className={`fixed top-0 w-full z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 ${
-        scrolled || menuOpen ? "bg-[#0a0a0f]/95 backdrop-blur-md border-b border-white/5" : "bg-transparent"
+        scrolled || menuOpen ? "bg-blue-1000/95 backdrop-blur-md border-b border-white/5" : "bg-transparent"
       }`}>
         <div className="flex gap-2 items-center">
             <img src={img} className="w-8 h-8 rounded-xl" alt="cro-logo"/>

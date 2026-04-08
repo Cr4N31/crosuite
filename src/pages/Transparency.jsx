@@ -47,30 +47,30 @@ function Transparency() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="bg-[#0d0d1a] border border-white/[0.05] rounded-xl p-8">
-            <p className="text-[0.6rem] tracking-[5px] uppercase text-blue-500/70 mb-2">Direction</p>
+          <div className="bg-blue-900/90 border border-white/[0.05] rounded-xl p-8">
+            <p className="text-[0.6rem] tracking-[5px] uppercase text-blue-300 mb-2">Direction</p>
             <h3 className="font-syne font-bold text-lg text-white mb-5">Project Direction</h3>
-            <p className="text-white/60 text-sm leading-loose mb-6">
+            <p className="text-white/80 text-sm leading-loose mb-6">
               Crosuite is currently in a rebuilding phase focused on a stronger foundation,
               clear product direction, and real utility over hype.
             </p>
             <ul className="flex flex-col gap-3">
               {directions.map((item) => (
-                <li key={item} className="flex items-center gap-3 text-sm text-white/40">
-                  <span className="w-1 h-1 rounded-full bg-blue-500/50 shrink-0" />
+                <li key={item} className="flex items-center gap-3 text-sm text-white/60">
+                  <span className="w-1 h-1 rounded-full bg-blue-300/50 shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="bg-[#0d0d1a] border border-white/[0.05] rounded-xl p-8">
-            <p className="text-[0.6rem] tracking-[5px] uppercase text-violet-500/70 mb-2">Commitment</p>
+          <div className="bg-blue-900/90 border border-white/[0.05] rounded-xl p-8">
+            <p className="text-[0.6rem] tracking-[5px] uppercase text-violet-300 mb-2">Commitment</p>
             <h3 className="font-syne font-bold text-lg text-white mb-5">Our Commitment</h3>
             <ul className="flex flex-col gap-3">
               {commitments.map((item) => (
-                <li key={item} className="flex items-center gap-3 text-sm text-white/40">
-                  <span className="w-1 h-1 rounded-full bg-violet-500/50 shrink-0" />
+                <li key={item} className="flex items-center gap-3 text-sm text-white/60">
+                  <span className="w-1 h-1 rounded-full bg-violet-300/50 shrink-0" />
                   {item}
                 </li>
               ))}

@@ -11,10 +11,10 @@ function FeatureCard() {
         {features.map((f) => (
           <div
             key={f.title}
-            className="bg-black/50 border border-white/[0.06] rounded-2xl p-6 hover:border-blue-900/50 transition-all duration-300"
+            className="bg-blue-600/60 border border-white/[0.06] rounded-2xl p-6 hover:border-blue-900/50 transition-all duration-300"
             data-aos="fade-right"
           >
-            <div className="w-10 h-10 rounded-xl bg-blue-950/80 flex items-center justify-center text-blue-400 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-blue-950/80 flex items-center justify-center text-white mb-4">
               {icons[f.icon]}
             </div>
             <h3 className="font-syne font-bold text-blue-200 text-base mb-2">{f.title}</h3>
@@ -22,7 +22,7 @@ function FeatureCard() {
             <ul className="flex flex-col gap-2">
               {f.points.map((point) => (
                 <li key={point} className="flex items-center gap-2 text-xs text-white/70">
-                  <span className="w-1 h-1 rounded-full bg-blue-500/60 shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-blue-200/60 shrink-0" />
                   {point}
                 </li>
               ))}
