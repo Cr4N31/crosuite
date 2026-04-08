@@ -2,8 +2,8 @@ import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import { features } from "../data/features"
 import { icons } from "../components/ui/Icons"
-import bg from "../../public/assets/Crosuit bg 2.jpeg"
-import mainBg from "../../public/assets/mainBg.jpg"
+import bg from "/assets/Crosuit bg 2.jpeg"
+import mainBg from "/assets/mainBg.jpg"
 
 function Features() {
   return (
@@ -41,7 +41,7 @@ function Features() {
                 <div className="w-10 h-10 rounded-lg bg-blue-950/60 flex items-center justify-center text-blue-400">
                   {icons[f.icon]}
                 </div>
-                <h3 className="font-syne font-bold text-white text-lg">{f.title}</h3>
+                <h3 className="font-bold text-blue-200 text-lg">{f.title}</h3>
               </div>
               <p className="text-white/30 text-sm leading-loose mb-6">{f.desc}</p>
               <ul className="flex flex-col gap-2">

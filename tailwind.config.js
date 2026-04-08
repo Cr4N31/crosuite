@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         syne: ["Syne", "sans-serif"],
         dm: ["DM Sans", "sans-serif"],
+        qurova: ["Qurova", "sans-serif"],
       },
     },
   },

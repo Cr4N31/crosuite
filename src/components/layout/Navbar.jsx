@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
-import Button from "../ui/Button"
+import Button from "../ui/Button";
+import img from "/assets/Crosuit bg 4.jpeg"
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -27,9 +28,13 @@ function Navbar() {
       <nav className={`fixed top-0 w-full z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 ${
         scrolled || menuOpen ? "bg-[#0a0a0f]/95 backdrop-blur-md border-b border-white/5" : "bg-transparent"
       }`}>
-        <Link to="/" className="font-syne font-extrabold text-xl tracking-widest text-white" onClick={handleLinkClick}>
-          CRO<span className="text-blue-500">SUITE</span>
-        </Link>
+        <div className="flex gap-2 items-center">
+            <img src={img} className="w-8 h-8 rounded-xl" alt="cro-logo"/>
+            <Link to="/" className="font-syne font-extrabold text-xl tracking-widest text-white" onClick={handleLinkClick}>
+            CRO<span className="text-blue-500">SUITE</span>
+            </Link>
+        </div>
+
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none">

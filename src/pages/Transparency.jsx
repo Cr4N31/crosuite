@@ -2,7 +2,7 @@ import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import FundBar from "../components/ui/FundBar"
 import { fundAllocation, commitments, directions } from "../data/fundAllocation"
-import bg from "../../public/assets/Crosuit bg 4.jpeg"
+import bg from "/assets/Crosuit bg 4.jpeg"
 
 function Transparency() {
   return (

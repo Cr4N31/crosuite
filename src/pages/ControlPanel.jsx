@@ -3,7 +3,7 @@ import Footer from "../components/layout/Footer"
 import CommandBlock from "../components/ui/CommandBlock"
 import { commands } from "../data/commands"
 import { icons } from "../components/ui/Icons"
-import bg from "../../public/assets/Crosuit bg 3.jpeg"
+import bg from "/assets/Crosuit bg 3.jpeg"
 
 function ControlPanel() {
   return (
@@ -34,7 +34,7 @@ function ControlPanel() {
           <div key={group.category} className="mb-16" data-aos="fade-up">
             <div className="flex items-center gap-3 mb-8 pb-4 border-b border-white/[0.04]">
               <span className="text-blue-500/60">{icons[group.icon]}</span>
-              <h2 className="font-syne font-bold text-xl text-white/70">{group.category}</h2>
+              <h2 className="font-syne font-bold text-xl text-blue-200">{group.category}</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {group.items.map((item) => (
